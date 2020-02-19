@@ -12,4 +12,8 @@ app.get('/', (req, res) => {
   res.render('home', { name: 'Juan', year: new Date().getFullYear()})
 });
 
+app.get('/about', (req, res) => {
+  res.render('about', { year: new Date().getFullYear()})
+});
+
 app.listen(3000, () => console.log('listening'));
